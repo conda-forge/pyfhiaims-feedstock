@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyfhiaims
-  version: "1.1.0"
+  version: "1.1.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pyfhiaims-${{ version }}.tar.gz
-  sha256: 7b1ab59f49c1d4a68be5113dceda4f067fc04f8a96c92b4b62f19c6d2cb91d01
+  sha256: 7effc307a758fce3c1f6140810b06c609defce6456128145fef23f8aece54f1a
 
 build:
   number: 0
