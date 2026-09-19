@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyfhiaims
-  version: "1.1.1"
+  version: '1.2'
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pyfhiaims-${{ version }}.tar.gz
-  sha256: 7effc307a758fce3c1f6140810b06c609defce6456128145fef23f8aece54f1a
+  sha256: 28e53d6457b578762e7d7af2c3f1cda5f886b837469f3b1ccad2cd06a207ed6f
 
 build:
   number: 0
@@ -28,10 +28,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - numpy
-    - scipy >=1.1.1
     - monty >=2024.10.21
-    - pyyaml
-
 tests:
   - python:
       imports:
